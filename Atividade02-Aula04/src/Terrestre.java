@@ -10,7 +10,7 @@ public class Terrestre extends Mamifero {
     this.qtdePresas = qtdePresas;
   }
 
-  public int getQtDePatas() {
+  public int getQtdePatas() {
     return qtdePatas;
   }
 

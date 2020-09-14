@@ -14,6 +14,12 @@ public class Principal {
 
     public void mostrarDados() {
         System.out.println(elefante.getNomeClasse());
+        System.out.println(elefante.getOrganismo());
+        System.out.println(elefante.getPeso());
+        System.out.println(elefante.getTipo());
+        System.out.println(elefante.getNomeReino());
+        System.out.println(elefante.getQtdePatas());
+        System.out.println(elefante.getQtdePresas());
     }
     
     public static void main(String[] args) throws Exception {
