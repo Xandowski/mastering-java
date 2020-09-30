@@ -1,29 +1,38 @@
-public class Compra {
-	private long numero;
-	private String data;
-	private double total;
+public class Aluno {
+	private String nome;
+	private String cidade;
+	private long ra;
+	private long enem;
 	
-	public void setNumero(long num) {
-		this.numero = num;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
-	public void setData(String data) {
-		this.data = data;
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
 	}
 	
-	public void setTotal(double total) {
-		this.total = total;
+	public void setRa(long ra) {
+		this.ra = ra;
 	}
 	
-	public long getNumero() {
-		return numero;
+	public void setEnem(long enem) {
+		this.enem = enem;
 	}
 	
-	public String getData() {
-		return data;
+	public String getNome() {
+		return nome;
 	}
 	
-	public double getTotal() {
-		return total;
+	public String getCidade() {
+		return cidade;
+	}
+
+	public long getRa() {
+		return ra;
+	}
+	
+	public long getEnem() {
+		return enem;
 	}
 }
