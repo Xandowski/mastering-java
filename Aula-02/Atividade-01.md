@@ -1,5 +1,10 @@
 # Atividade 01 aula 02
 
-introdução sobre os métodos get e set.
+**Instruções**
+Criar os métodos getters e setters para a seguite classe (observação faça no draw.io ou ferramentas pareceida).
 
-Criar as classes compra e produto e definir os getters e setters.
+![](../images/tarefa-produto.png)
+
+**Meu trabalho:**
+
+![](../images/produto-get-set.png)

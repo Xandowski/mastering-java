@@ -1,5 +1,9 @@
 # Atividade 02 aula 02
 
-Primeiros conceitos sobre herança.
+**Instruções**
+Acompanhamento das atividades com o professor:
+1. Criar novo projeto
+2. Criar classe Produto
+    a) adicionar getters e setters MANUALMENTE
 
-Criar as classes aluno, pessoa e professor, definir os getters e setters e aplicar o conceito de herança.
+![](../images/tarefa-produto.png)
