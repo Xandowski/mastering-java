@@ -1,4 +1,3 @@
-
 public class Aluno extends Pessoa{
 	private long ra;
 	private long enem;
