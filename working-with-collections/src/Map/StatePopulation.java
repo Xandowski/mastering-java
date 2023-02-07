@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
@@ -68,14 +69,68 @@ public class StatePopulation {
     Map<String, Double> northeasternStatesTree = new TreeMap<>(northeasternStatesLinked);
     System.out.println(northeasternStatesTree);
 
-    System.out.println("Estado com menor população: ");
     Collection<Double> population = northeasternStatesLinked.values();
     Double smallerPopulation = Collections.min(population);
     Set<Map.Entry<String, Double>> entries = northeasternStatesLinked.entrySet();
     Set<String> stateSmallerPopulation = new HashSet<>();
 
-    System.out.println("População: " + population);
-    System.out.println("Menor População: " + smallerPpopulation);
+    for (Map.Entry<String, Double> entry : entries) {
+      if (entry.getValue().equals(smallerPopulation)) {
+        stateSmallerPopulation.add(entry.getKey());
+      }
+    }
 
+    if (stateSmallerPopulation.size() > 1) {
+      System.out.println("Os estados com a menor população são: ");
+    } else {
+      System.out.println("O estado com a menor população é: ");
+    }
+
+    for (String state : stateSmallerPopulation) {
+      System.out.println(state);
+    }
+
+    Double largestPopulation = Collections.max(population);
+    Set<Map.Entry<String, Double>> entries2 = northeasternStatesLinked.entrySet();
+    Set<String> stateLargestPopulation = new HashSet<>();
+
+    for (Map.Entry<String, Double> entry : entries2) {
+      if (entry.getValue().equals(largestPopulation)) {
+        stateLargestPopulation.add(entry.getKey());
+      }
+    }
+
+    if (stateLargestPopulation.size() > 1) {
+      System.out.println("Os estados com a maior população são: ");
+    } else {
+      System.out.println("O estado com a maior população é: ");
+    }
+
+    for (String state : stateLargestPopulation) {
+      System.out.println(state);
+    }
+
+    Iterator<Double> iterator = population.iterator();
+    Double totalPopulation = 0d;
+
+    while (iterator.hasNext()) {
+      totalPopulation += iterator.next();
+    }
+
+    System.out.println("Soma da população: " + totalPopulation);
+    System.out.println("A media da população desses estados: " + (totalPopulation / population.size()));
+
+    System.out.println("Removendo estados com população abaixo de 4.000.000:");
+    Iterator<Double> iterator2 = northeasternStates.values().iterator();
+    while (iterator2.hasNext()) {
+      if (iterator2.next() < 4.000000) {
+        iterator2.remove();
+      }
+    }
+    System.out.println(northeasternStates);
+
+    System.out.println("Deletando todos os valores: ");
+    northeasternStates.clear();
+    System.out.println(northeasternStates);
   }
 }
