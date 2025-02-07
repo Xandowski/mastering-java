@@ -1,4 +1,4 @@
-package Map;
+package com.morais.alexandre.collections.map;
 
 public class Contact {
   String name;

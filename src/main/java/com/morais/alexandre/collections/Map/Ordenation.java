@@ -1,4 +1,4 @@
-package Map;
+package com.morais.alexandre.collections.map;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -10,13 +10,10 @@ import java.util.TreeSet;
 public class Ordenation {
   public static void main(String[] args) {
     System.out.println("Ordem aleátoria.");
-    Map<String, Book> myBooks = new HashMap<>() {
-      {
-        put("Pushkin Press", new Book("Robert W. Chambers", "The king in yellow", 316));
-        put("Alma Books", new Book("F Scott Fitzgerald", "The Great Gatsby", 256));
-        put("Orbit", new Book("Andrzej Sapkowski", "The Last Wish: Introducing the Witcher", 384));
-      }
-    };
+    Map<String, Book> myBooks = new HashMap<>();
+    myBooks.put("Pushkin Press", new Book("Robert W. Chambers", "The king in yellow", 316));
+    myBooks.put("Alma Books", new Book("F Scott Fitzgerald", "The Great Gatsby", 256));
+    myBooks.put("Orbit", new Book("Andrzej Sapkowski", "The Last Wish: Introducing the Witcher", 384));
 
     myBooks.forEach((key, value) -> {
       System.out.println("Publishing : " + key + " - " + value.toString());
@@ -24,13 +21,11 @@ public class Ordenation {
 
     System.out.println("--  Ordem de inserção.  --");
 
-    Map<String, Book> myBooksLinkedMap = new LinkedHashMap<>() {
-      {
-        put("Pushkin Press", new Book("Robert W. Chambers", "The king in yellow", 316));
-        put("Alma Books", new Book("F Scott Fitzgerald", "The Great Gatsby", 256));
-        put("Orbit", new Book("Andrzej Sapkowski", "The Last Wish: Introducing the Witcher", 384));
-      }
-    };
+    Map<String, Book> myBooksLinkedMap = new LinkedHashMap<>();
+    myBooksLinkedMap.put("Pushkin Press", new Book("Robert W. Chambers", "The king in yellow", 316));
+    myBooksLinkedMap.put("Alma Books", new Book("F Scott Fitzgerald", "The Great Gatsby", 256));
+    myBooksLinkedMap.put("Orbit", new Book("Andrzej Sapkowski", "The Last Wish: Introducing the Witcher", 384));
+
 
     myBooksLinkedMap.forEach((key, value) -> {
       System.out.println("Publishing : " + key + " - " + value.toString());

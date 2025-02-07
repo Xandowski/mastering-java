@@ -1,4 +1,4 @@
-package Map;
+package com.morais.alexandre.collections.map;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -31,14 +31,11 @@ import java.util.TreeMap;
 
 public class StatePopulation {
   public static void main(String[] args) {
-    Map<String, Double> northeasternStates = new HashMap<>() {
-      {
-        put("PE", 9.616621);
-        put("AL", 3.351543);
-        put("CE", 9.187103);
-        put("RN", 3.534265);
-      }
-    };
+    Map<String, Double> northeasternStates = new HashMap<>();
+    northeasternStates.put("PE", 9.616621);
+    northeasternStates.put("AL", 3.351543);
+    northeasternStates.put("CE", 9.187103);
+    northeasternStates.put("RN", 3.534265);
     System.out.println("Dicionario de estados do Nordeste:");
     System.out.println(northeasternStates);
 

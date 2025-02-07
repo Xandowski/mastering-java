@@ -1,4 +1,4 @@
-package Map;
+package com.morais.alexandre.collections.map;
 
 import java.util.Comparator;
 import java.util.HashMap;
@@ -17,13 +17,10 @@ id = 3 - Contato = nome: Jon, numero: 1111;
 
 public class Schedule {
   public static void main(String[] args) {
-    Map<Integer, Contact> schedule = new HashMap<>() {
-      {
-        put(1, new Contact("Simba", 2222));
-        put(4, new Contact("Cami", 5555));
-        put(3, new Contact("Jon", 1111));
-      }
-    };
+    Map<Integer, Contact> schedule = new HashMap<>();
+    schedule.put(1, new Contact("Simba", 2222));
+    schedule.put(4, new Contact("Cami", 5555));
+    schedule.put(3, new Contact("Jon", 1111));
 
     System.out.println("Usando HashMap: ");
     schedule.forEach((key, value) -> {

@@ -1,3 +1,5 @@
+package com.morais.alexandre.collections;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,17 +12,14 @@ import java.util.TreeSet;
 
 public class Rainbow {
   public static void main(String[] args) {
-    Set<String> rainbow = new HashSet<>() {
-      {
-        add("Vermelho");
-        add("Laranja");
-        add("Amarelo");
-        add("Verde");
-        add("Azul");
-        add("Anil");
-        add("Violeta");
-      }
-    };
+    Set<String> rainbow = new HashSet<>();
+    rainbow.add("Vermelho");
+    rainbow.add("Laranja");
+    rainbow.add("Amarelo");
+    rainbow.add("Verde");
+    rainbow.add("Azul");
+    rainbow.add("Anil");
+    rainbow.add("Violeta");
 
     Set<String> rainbowTree = new TreeSet<>(rainbow);
     Set<String> rainbowLinked = new LinkedHashSet<>(

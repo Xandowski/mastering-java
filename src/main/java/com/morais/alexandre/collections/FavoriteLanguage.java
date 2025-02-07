@@ -1,3 +1,5 @@
+package com.morais.alexandre.collections;
+
 public class FavoriteLanguage implements Comparable<FavoriteLanguage> {
   private String name;
   private String createdAt;

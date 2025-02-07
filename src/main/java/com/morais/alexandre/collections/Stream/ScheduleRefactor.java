@@ -1,4 +1,4 @@
-package Stream;
+package com.morais.alexandre.collections.stream;
 
 import java.util.Comparator;
 import java.util.HashMap;
@@ -10,17 +10,14 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.function.Function;
 
-import Map.Contact;
+import com.morais.alexandre.collections.map.Contact;
 
 public class ScheduleRefactor {
   public static void main(String[] args) {
-    Map<Integer, Contact> schedule = new HashMap<>() {
-      {
-        put(1, new Contact("Simba", 2222));
-        put(4, new Contact("Cami", 5555));
-        put(3, new Contact("Jon", 1111));
-      }
-    };
+    Map<Integer, Contact> schedule = new HashMap<>();
+    schedule.put(1, new Contact("Simba", 2222));
+    schedule.put(4, new Contact("Cami", 5555));
+    schedule.put(3, new Contact("Jon", 1111));
 
     System.out.println("Usando HashMap: ");
     schedule.forEach((key, value) -> {

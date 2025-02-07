@@ -1,4 +1,4 @@
-package list.Search;
+package com.morais.alexandre.collections.list.Search;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,3 +1,5 @@
+package com.morais.alexandre.collections;
+
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -5,25 +7,19 @@ import java.util.TreeSet;
 
 public class SetOrdenateExample {
   public static void main(String[] args) {
-    Set<Serie> mySeries = new HashSet<>() {
-      {
-        add(new Serie("BreakingBad", "Drama", 45));
-        add(new Serie("Mr.robot", "Drama", 45));
-        add(new Serie("Himym", "Comedy", 25));
-      }
-    };
+    Set<Serie> mySeries = new HashSet<>();
+    mySeries.add(new Serie("BreakingBad", "Drama", 45));
+    mySeries.add(new Serie("Mr.robot", "Drama", 45));
+    mySeries.add(new Serie("Himym", "Comedy", 25));
 
     for (Serie serie : mySeries)
       System.out.println("Titulo: " + serie.getTitle()
           + " - Genero: " + serie.getGenre() + " - Tempo episodio: " + serie.getEpisodeTime());
 
-    Set<Serie> mySeriesLinked = new LinkedHashSet<>() {
-      {
-        add(new Serie("BreakingBad", "Drama", 45));
-        add(new Serie("Mr.robot", "Drama", 45));
-        add(new Serie("Himym", "Comedy", 25));
-      }
-    };
+    Set<Serie> mySeriesLinked = new LinkedHashSet<>();
+    mySeriesLinked.add(new Serie("BreakingBad", "Drama", 45));
+    mySeriesLinked.add(new Serie("Mr.robot", "Drama", 45));
+    mySeriesLinked.add(new Serie("Himym", "Comedy", 25));
 
     for (Serie serie : mySeriesLinked)
       System.out.println("Titulo: " + serie.getTitle()

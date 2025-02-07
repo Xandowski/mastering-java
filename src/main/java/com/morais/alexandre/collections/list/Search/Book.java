@@ -1,5 +1,4 @@
-package list.Search;
-
+package com.morais.alexandre.collections.list.Search;
 public class Book {
     String title;
     String author;

@@ -1,3 +1,5 @@
+package com.morais.alexandre.collections;
+
 import java.util.Comparator;
 
 public class Serie implements Comparable<Serie> {

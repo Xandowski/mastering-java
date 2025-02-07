@@ -1,4 +1,4 @@
-package Map;
+package com.morais.alexandre.collections.map;
 
 import java.util.Comparator;
 import java.util.Map;

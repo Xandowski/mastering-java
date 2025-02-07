@@ -1,4 +1,4 @@
-package Map;
+package com.morais.alexandre.collections.map;
 
 import java.util.Collection;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package Map;
+package com.morais.alexandre.collections.map;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -12,16 +12,13 @@ import java.util.Random;
 public class ThrowDice {
   public static void main(String[] args) {
     Random random = new Random();
-    Map<String, Integer> dice = new HashMap<>() {
-      {
-        put("1", 0);
-        put("2", 0);
-        put("3", 0);
-        put("4", 0);
-        put("5", 0);
-        put("6", 0);
-      }
-    };
+    Map<String, Integer> dice = new HashMap<>();
+    dice.put("1", 0);
+    dice.put("2", 0);
+    dice.put("3", 0);
+    dice.put("4", 0);
+    dice.put("5", 0);
+    dice.put("6", 0);
 
     for (int i = 0; i < 10; i++) {
       int num = random.nextInt(6) + 1;
