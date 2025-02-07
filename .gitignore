@@ -30,6 +30,4 @@ hs_err_pid*
 
 .idea/
 out/
-
-POO-Fatec/
-POO-DIO/
+.vscode/
